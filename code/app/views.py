@@ -9,7 +9,7 @@ data = u"""{
         {"name":"Fall 2013 Classes","link":"/classes"},
         {"name":"Quick Links","link":"/links"},
         {"name":"Office Location","link":"/office"},
-        {"name":"About Me","link":"/personal"},
+        {"name":"About Me","link":"/about"},
         {"name":"How-To Notes","link":"/howto"},
         {"name":"Lecture Notes","link":"/lectures"}
     ]
