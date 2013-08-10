@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+<img src="/static/images/roie-portrait.png">
+<aside>
+Interesting stuff about the site
+</aside>
+</section>
+{% endblock %}
+
+{% block header %}
+<h1 class="logo">{{ title }}</h1>
+<nav>
+  <ul>
+  {% for link in nav %}
+    <li><a href="{{ link.link }}">{{ link.name }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
+{% endblock %}
