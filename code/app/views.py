@@ -38,3 +38,10 @@ def office():
             nav = nav
            )
 
+@app.route('/about')
+def about():
+    return render_template("about.html",
+            title = "ABout me",
+            nav = nav
+           )
+

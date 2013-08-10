@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+{% endblock %}
+
+{% block header %}
+<h1 class="logo">{{ title }}</h1>
+<nav>
+  <ul>
+  {% for link in nav %}
+    <li><a href="{{ link.link }}">{{ link.name }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
+{% endblock %}
