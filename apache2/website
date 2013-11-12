@@ -1,0 +1,32 @@
+<VirtualHost *:80>
+  ServerName www.pylit.org
+
+  DocumentRoot /home/rblack/pylit/http
+
+  <Directory />
+    Options FollowSymLinks
+    ALlowOverride None
+  </Directory>
+
+  <Directory /home/rblack/ACC.webcore/http/>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  WSGIDaemonProcess website user=www-data group=www-data threads=5
+  WSGIScriptAlias /ACC /home/rblack/pylit/apache2/pylit.wsgi
+
+  <Directory /home/rblack/ACC.website>
+    WSGIProcessGroup website
+    WSGIApplicationGroup ${GLOBAL}
+    Order deny,allow
+    Allow from all
+  </Directory>
+  LogLevel warn
+  ErrorLog /home/rblack/ACC.website/log/error.log
+  CustomLog /home/rblack/ACC.website/log/access.log combined
+</VirtualHost>
+
+

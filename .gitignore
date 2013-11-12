@@ -1,6 +1,8 @@
 *.pyc
 *.swp
-venv
+_venv
 .DS_Store
-build
+_build
+log
+
 
