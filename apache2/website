@@ -18,15 +18,15 @@
   WSGIDaemonProcess website user=www-data group=www-data threads=5
   WSGIScriptAlias /ACC /home/rblack/pylit/apache2/pylit.wsgi
 
-  <Directory /home/rblack/ACC.website>
+  <Directory /home/rblack/RRBweb>
     WSGIProcessGroup website
     WSGIApplicationGroup ${GLOBAL}
     Order deny,allow
     Allow from all
   </Directory>
   LogLevel warn
-  ErrorLog /home/rblack/ACC.website/log/error.log
-  CustomLog /home/rblack/ACC.website/log/access.log combined
+  ErrorLog /home/rblack/RRBweb/log/error.log
+  CustomLog /home/rblack/RRBweb/log/access.log combined
 </VirtualHost>
 
 

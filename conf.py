@@ -8,7 +8,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 master_doc = 'index'
 
-project = u'ACC.webcore'
+project = u'RRBweb'
 copyright = u'2013, Roie R. Black'
 
 version = '0.1'
@@ -25,7 +25,7 @@ html_theme = "cloud"
 html_theme_path = [csp.get_theme_dir()]
 
 html_title = "Base Website Docs"
-html_short_title = "ACC.webcore"
+html_short_title = "RRBweb"
 html_logo = '_static/images/ACClogo.png'
 html_static_path = ['_static']
 html_last_updated_fmt = '%b %d, %Y'
@@ -45,7 +45,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'ACC.webcore.tex', u'Base Website Docs',
+  ('index', 'RRBweb.tex', u'Base Website Docs',
    u'Roie R. Black', 'manual'),
 ]
 

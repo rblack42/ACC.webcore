@@ -1,4 +1,6 @@
-ACC.webcore
-===========
+RBweb
+=====
 
-Basic website (no course notes)
+Roie Black's ACC website 
+
+A Python Flask application

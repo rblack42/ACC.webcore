@@ -1,6 +1,9 @@
 *.pyc
 *.swp
 _venv
+_log
+_http
+_unpublished
 .DS_Store
 _build
 log
