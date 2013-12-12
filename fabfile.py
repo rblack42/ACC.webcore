@@ -12,10 +12,10 @@ def pdf():
     with lcd('_build/latex'):
         local('pdflatex RRBweb.tex')
 
-def new_project():
-    """create new virtualenv for this projet"""
-    local('rm -rf venv')
-    local('virtualenv --no-site-packages venv')
+def new_venv():
+    """create new virtualenv for this project"""
+    local('rm -rf i_venv')
+    local('virtualenv --no-site-packages _venv')
 
 def gen_style():
     """process sass files to css"""
