@@ -41,7 +41,7 @@ def office():
 @app.route('/about')
 def about():
     return render_template("about.html",
-            title = "ABout me",
+            title = "About me",
             nav = nav
            )
 

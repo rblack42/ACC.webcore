@@ -33,3 +33,4 @@ def deploy():
     """push code to github, then pull to ww.pylit.org"""
     with cd('RRBweb'):
         run('git pull')
+        sudo('service apache2 restart')
